@@ -13,6 +13,10 @@ $(document).ready(function() {
     var question5 = $("input:radio[name=question5]:checked").val();
     var question6 = $("input:radio[name=question6]:checked").val();
 
+    if (name == "") {
+      $(".outcome").text("Please enter your name to get your results.");
+    }
+
     if (question1 === "agree") {
       politicalIndex++;
     }
